@@ -2612,7 +2612,7 @@ h3 {
 	clear: both;
 }
 
-.lang-list li {
+.lang-list div {
 	font-size: 12px;
 	width: 80px;
 	height: 80px;
