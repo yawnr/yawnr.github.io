@@ -2639,3 +2639,8 @@ h3 {
 .cbold {
 	font-weight: 600;
 }
+
+.long-div {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
