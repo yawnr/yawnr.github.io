@@ -2597,9 +2597,13 @@ h3 {
 	background: #67a8a4
 }
 
+.list-container {
+	width: 100%;
+}
+
 .lang-list {
 	margin: 0 auto;
-	width: 840px;
+	width: calc(100% - 160px);
 }
 
 .group:after {
