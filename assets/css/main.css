@@ -1578,11 +1578,17 @@
 		color: #888;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2, h4, h5, h6 {
 		font-weight: 300;
 		color: #666;
 		line-height: 1em;
 	}
+
+h3 {
+	font-weight: 500;
+	color: #666;
+	line-height: 1em;
+}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 		color: inherit;
@@ -2558,6 +2564,9 @@
 
 .three {
 	text-align: left !important;
+	line-height: 1.2;
+	font-size: 18px;
+	font-weight: 500;
 }
 
 .three-point-five {
@@ -2580,6 +2589,7 @@
 	border-radius: 10px;
 	color: white !important;
 	transition: all 200ms;
+	font-weight: 600;
 }
 
 .resume-button:hover {
@@ -2620,4 +2630,8 @@
 
 .ff:hover {
 	opacity: .8;
+}
+
+.cbold {
+	font-weight: 600;
 }
