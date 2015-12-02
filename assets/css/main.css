@@ -2620,6 +2620,10 @@ h3 {
 	padding: 10px;
 }
 
+.lang-text {
+	width: 60px !important;
+}
+
 .lang-list img {
 	width: 100%;
 	height: auto;
