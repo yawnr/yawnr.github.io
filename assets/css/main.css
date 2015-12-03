@@ -2172,7 +2172,7 @@ h3 {
 					}
 
 			#main > section.cover {
-				padding: 6em 0;
+				padding: 2em 0;
 				background-size: cover;
 				background-position: center center;
 			}
@@ -2598,12 +2598,11 @@ h3 {
 }
 
 .list-container {
-	width: 100%;
+	display: inline-block;
 }
 
 .lang-list {
 	margin: 0 auto;
-	width: calc(100% - 160px);
 }
 
 .group:after {
@@ -2643,4 +2642,8 @@ h3 {
 .long-div {
 	margin-top: 20px;
 	margin-bottom: 30px;
+}
+
+h2.alt {
+	/*margin-top: -5%;*/
 }
