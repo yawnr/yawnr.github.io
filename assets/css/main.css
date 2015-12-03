@@ -2179,12 +2179,12 @@ h3 {
 
 			#main > section.one:hover {
 				background-size: 300px;
-				background-image: url("../../images/js.png");
+				background-image: url("../../images/js3.png");
 			}
 
 
 			#main > section.one {
-				background-image: url("../../images/js2.png");
+				background-image: url("../../images/js4.png");
 				background-size: 320px;
 				background-repeat: no-repeat;
 				background-position: bottom;
