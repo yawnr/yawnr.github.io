@@ -1,0 +1,302 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+html, body, div, ul, li, img, section, figure, button, a, table, input, span, i {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  font-family: 'Poppins', sans-serif;
+  text-align: inherit;
+  text-decoration: none;
+
+  color: inherit;
+  background: transparent;
+}
+
+h1, h2, h3, h4 {
+  color: #222;
+  padding: 0 10px;
+}
+
+html {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+input {
+  display: block;
+  background: transparent;
+}
+
+input:focus {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+input {
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page {
+  position: relative;
+  /* padding: 50px 100px; */
+  max-width: 1300px;
+  margin: auto;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  flex: 1;
+  z-index: 10000;
+  background: rgba(255, 255, 255, 0.97);
+  transition: all 400ms;
+}
+
+.modal.hide {
+  opacity: 0;
+  z-index: -1;
+}
+
+.modal.transitioning {
+  opacity: 0;
+}
+
+.modal-box {
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  flex: 1;
+  position: relative;
+}
+
+.modal-box h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.modal-box input:not(:last-child) {
+  font-size: 20px;
+  padding: 3px 0;
+  border-bottom: 1px solid #999;
+  width: 500px;
+}
+
+.modal-box textarea {
+  height: 250px;
+  min-height: 250px;
+  font-size: 20px;
+  max-height: 250px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  background: transparent;
+  border: none;
+}
+
+#close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+#close::before, #close::after {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  content: "";
+  width: 1px;
+  height: 40px;
+  background: #333;
+  transform: translateX(-15px) rotate(45deg);
+}
+
+#close::after {
+  transform: translateX(-15px) rotate(-45deg);
+}
+
+.header {
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+p {
+  margin-top: 0;
+  color: #777;
+  padding: 0 10px;
+  line-height: 20px;
+}
+
+.header a {
+  padding: 10px 40px;
+  background: #333;
+  color: #fff;
+  border-radius: 20px;
+  font-weight: 700;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.4);
+}
+
+.dark-button {
+  padding: 10px 40px;
+  background: #333;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.4);
+}
+
+p a {
+  font-weight: 700;
+}
+
+.screenshots-wrap {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+  position: relative;
+  padding-right: 100px;
+}
+
+.gradient {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.screenshot {
+  display: inline-block;
+  width: 225px;
+  height: 400px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  transition: all 300ms;
+}
+
+.screenshot.wide {
+  width: 700px;
+  height: 400px;
+}
+
+.screenshot.movie {
+  width: 225px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.screenshot.movie video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 105%;
+  width: auto;
+  transform: translateX(-35%);
+}
+
+.screenshot.td {
+  background-position: top left;
+}
+
+.screenshot.keys {
+  background-size: 600px;
+  background-position: center;
+}
+
+.screenshot:hover {
+  opacity: 0.8;
+}
+
+section {
+  margin-top: 50px;
+}
+
+.about p {
+  margin: 0;
+}
+
+#resume {
+  padding-bottom: 200px;
+}

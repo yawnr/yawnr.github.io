@@ -1,197 +1,162 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>John Snyder</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="page">
+      <div class="header flex">
+        <h1>John Snyder</h1>
+        <a href="javascript;" id="contact">Contact</a>
+      </div>
 
-<html>
-	<head>
-		<title>John Snyder</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-	</head>
-	<body>
+      <section class="about">
+        <h2>About</h2>
+        <p>I'm an NYC-based software developer and UI/UX desinger who loves taking ideas from conception to launch.</p>
+        <p>I primarily work with Ruby / Rails, Python / Django / Flask, JavaScript / React Native / React and am crazy about CSS.</p>
+        <p>I also play <a href="https://www.yawnermusic.com">music</a> and take <a href="https://www.flickr.com/photos/130467451@N08">pictures</a> sometimes.</p>
+      </section>
 
-		<!-- Header -->
-			<div id="header">
+      <section>
+        <h2>Portfolio</h2>
 
-				<div class="top">
+        <a href="#">
+          <h3>Tasteful</h3>
+          <p>Recommendation and social networking app built with React Native. Backend built with Python / Django.</p>
+          <div style="position:relative;">
+            <div class="screenshots-wrap">
+              <div class="screenshot movie">
+                <video autoplay loop src="images/tf1.mp4" /></video>
+              </div>
+              <div class="screenshot movie">
+                <video autoplay loop src="images/tf2.mp4" /></video>
+              </div>
+              <div class="screenshot movie">
+                <video autoplay loop src="images/tf3.mp4" /></video>
+              </div>
+              <div class="screenshot" style="background-image: url('images/tasteful1.png');"></div>
+              <div class="screenshot" style="background-image: url('images/tasteful2.png');"></div>
+              <div class="screenshot" style="background-image: url('images/tasteful3.png');"></div>
+              <div class="screenshot" style="background-image: url('images/tasteful4.png');"></div>
+              <div class="screenshot" style="background-image: url('images/tasteful5.png');"></div>
+              <div class="screenshot" style="background-image: url('images/tasteful6.png');"></div>
+              <div class="screenshot" style="background-image: url('images/tasteful7.png');"></div>
+              <div class="screenshot" style="background-image: url('images/tasteful8.png');"></div>
+              <div class="screenshot" style="background-image: url('images/tasteful9.png');"></div>
+              <div class="screenshot" style="background-image: url('images/tasteful10.png');"></div>
+            </div>
 
+            <div class="gradient"></div>
+          </div>
+        </a>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<!--
+        <a href="https://www.getcoinspring.com">
+          <h3>Coinspring</h3>
+          <p>Fully cross-platform cryptocurrency micro-investing platform built with React Native and Ruby / Rails.</p>
+          <div style="position:relative;">
+            <div class="screenshots-wrap">
+              <div class="screenshot movie">
+                <video autoplay loop src="images/cs1.mp4" /></video>
+              </div>
+              <div class="screenshot movie">
+                <video autoplay loop src="images/cs2.mp4" /></video>
+              </div>
+              <div class="screenshot wide" style="background-image: url('images/cs1.png');"></div>
+              <div class="screenshot wide" style="background-image: url('images/cs2.png');"></div>
+              <div class="screenshot wide" style="background-image: url('images/cs3.png');"></div>
+              <div class="screenshot" style="background-image: url('images/cs4.png');"></div>
+              <div class="screenshot" style="background-image: url('images/cs5.png');"></div>
+              <div class="screenshot" style="background-image: url('images/cs6.png');"></div>
+              <div class="screenshot" style="background-image: url('images/cs7.png');"></div>
+              <div class="screenshot" style="background-image: url('images/cs9.png');"></div>
+              <div class="screenshot" style="background-image: url('images/cs10.png');"></div>
+            </div>
 
-								Prologue's nav expects links in one of two formats:
+            <div class="gradient"></div>
+          </div>
+        </a>
 
-								1. Hash link (scrolls to a different section within the page)
+        <a href="https://techcrunch.com/video/a-better-way-to-do-your-taxes/">
+          <h3>TaxDrop</h3>
+          <p>Admin web app and mobile API built with Ruby / Rails.</p>
+          <div style="position:relative;">
+            <div class="screenshots-wrap">
+              <div class="screenshot wide td" style="background-image: url('images/taxdrop2.png');"></div>
+              <div class="screenshot wide td" style="background-image: url('images/taxdrop1.png');"></div>
+            </div>
 
-								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+            <div class="gradient"></div>
+          </div>
+        </a>
 
-								2. Standard link (sends the user to another page/site)
+        <a href="www.followfocus.co">
+          <h3>FollowFocus</h3>
+          <p>Photo storage and sharing web app built with Ruby / Rails / React.</p>
+          <div style="position: relative">
+            <div class="screenshots-wrap">
+              <div class="screenshot wide td" style="background-image: url('images/ff.png');"></div>
+              <div class="screenshot wide td" style="background-image: url('images/ff2.png');"></div>
+            </div>
 
-								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+            <div class="gradient"></div>
+          </div>
+        </a>
 
-							-->
-							<ul>
-								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Home</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Recent Work</span></a></li>
-								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About</span></a></li>
-								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
-							</ul>
-						</nav>
-
-				</div>
-
-				<div class="bottom">
-
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="http://www.facebook.com/yawnermusic" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="http://www.github.com/yawnr" class="icon fa-github"><span class="label">Github</span></a></li>
-							<li><a href="mailto:johnsnyder7@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-
-				</div>
-
-			</div>
-
-		<!-- Main -->
-			<div id="main">
-
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
-
-							<header>
-								<h2 class="alt">John Snyder is a <br/>Web Developer.</h2>
-								<p class="among">(among other things)</p>
-							<footer>
-								<a href="#portfolio" class="button scrolly">
-									<br/>
-									<br/>
-									<br/>
-									<br/>
-									<br/>
-									<br/>
-								</a>
-							</footer>
-							</header>
-
-
-						</div>
-					</section>
-
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
-
-							<header>
-								<h3>Recent Work</h3>
-							</header>
-
-							<ul>
-								<li><div>FollowFocus</div><a href="http://www.followfocus.co" ><img class="ff" src="./images/ff.png"/></a></li>
-								<li><a href="http://www.followfocus.co">Live</a> | <a href="https://github.com/yawnr/FollowFocus">Github</a></li>
-								<li><div>subPar Keyboard</div><a href="http://subparkeys.herokuapp.com" ><img class="ff" src="./images/msp.png"/></a></li>
-								<li><a href="https://subparkeys.herokuapp.com/">Live</a> | <a href="https://github.com/yawnr/flux_organ">Github</a></li>
-								<li><div>ActivORM</div><a href="https://github.com/yawnr/ActivORM" ><img class="ff" src="./images/ao.png"/></a></li>
-								<li><a href="https://github.com/yawnr/ActivORM">Github</a></li>
-							</ul>
-
-							<div>The projects above were created using either some or all of:</div>
-							<div class="list-container">
-								<div class="lang-list group">
-									<div class="long-div"><img src="./images/ruby.png"/>Ruby</div>
-									<div class="long-div"><img src="./images/rails.png"/>Rails</div>
-									<div class="long-div"><img src="./images/javascript.png"/>Javascript</div>
-									<div class="long-div"><img src="./images/react.png"/>React</div>
-									<div class="long-div"><img src="./images/flux.svg"/>Flux</div>
-									<div class="long-div"><img src="./images/jquery.png"/>jQuery</div>
-									<div class="long-div"><img src="./images/HTML5.png"/>HTML5</div>
-									<div class="long-div"><img src="./images/css.png"/>CSS3</div>
-									<div class="long-div"><img src="./images/git.png"/>Git</div>
-									<div class="long-div"><img src="./images/aws.png"/>AWS</div>
-								</div>
-							</div>
-						</div>
-					</section>
-
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container about">
-
-							<header>
-								<h3>About</h3>
-							</header>
-
-							<p>Oh, hey.</p>
-
-							<p>I guess I started coding when I was in high school on my TI-83 Plus calculator, when I wrote a short
-							 program to solve quadratic equations. While at Vassar, I took some courses in Java and built Flash
-							 games and websites during my spare time.</p>
-
-							<p>After a short detour in Finance (ahem, 6 years), I realized that the part of my job that I found to be the
-							 most interesting was writing VBA macros in Excel. And so I decided to become a full-time developer.</p>
-
-							<p>You can read my daily blog on my experience at App Academy <a href="http://yawnr.tumblr.com">here</a>.</p>
-
-							<p>Or maybe you're just here to <a href="http://www.yawnermusic.com">listen to some tunes</a>
-							or <a href="https://www.flickr.com/photos/130467451@N08">look at some photos?</a> Either way.</p>
-
-						</div>
-					</section>
-
-				<!-- About Me -->
-					<section id="about-pic" class="three-point-five">
-						<div class="container about">
+        <a href="https://subparkeys.herokuapp.com">
+          <h3>SubParKeys</h3>
+          <p>Web-based synthesizer and recorder utilizing the Web Audio API.</p>
+          <div class="screenshots-wrap">
+            <div class="screenshot wide keys" style="background-image: url('images/sp.png');"></div>
+          </div>
+        </a>
+      </section>
 
 
-						</div>
-					</section>
+      <section class="about">
+        <h2>Contact Info</h2>
+        <p>John Snyder</p>
+        <p>johnsnyder7@gmail.com</p>
+        <p>908.672.4204</p>
+      </section>
 
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
+      <section id="resume">
+        <h2>Resume</h2>
+        <a href="John_Snyder_Resume.pdf" class="dark-button">View Resume</a>
+      </section>
+    </div>
 
-							<header>
-								<h3>Contact</h3>
-							</header>
+    <div class="modal flex hide">
+      <div class="modal-box">
+        <div id="close"></div>
+        <h2>Contact</h2>
+        <form action="https://formspree.io/johnsnyder7@gmail.com" method="POST">
+          <input type="text" name="name" placeholder="name">
+          <input type="email" name="_replyto" placeholder="email">
+          <textarea name="message" placeholder="Message"></textarea>
+          <input type="submit" value="Send" class="dark-button">
+        </form>
+      </div>
+    </div>
+  </body>
 
-						<ul class="contact-list">
-							<li class="tele">mobile</li>
-							<li class="tele cbold">908.672.4204</li>
-							<li class="gmail">email</li>
-							<li class="gmail cbold"><a href="mailto:johnsnyder7@gmail.com">johnsnyder7@gmail.com</a></li>
-							<li class="linkedin">LinkedIn</li>
-							<li class="linkedin cbold"><a href="http://www.linkedin.com/in/johnsnyder7">http://www.linkedin.com/in/johnsnyder7</li>
-						</ul>
-							<a href="John_Snyder_Resume.pdf" class="resume-button">View Resume</a>
+  <script>
+    $('#contact').on('click', function (event) {
+      event.preventDefault();
+      $('.modal').removeClass('hide');
 
+    })
 
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<div id="footer">
-
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; John Snyder. All rights reserved.</li>
-					</ul>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollzer.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    $('#close').on('click', function (event) {
+      event.preventDefault();
+      $('.modal').addClass('transitioning');
+      setTimeout(function () {
+        $('.modal').addClass('hide');
+        $('.modal').removeClass('transitioning');
+      }, 400)
+    })
+  </script>
 </html>
