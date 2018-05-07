@@ -83,7 +83,6 @@ input {
 
 .page {
   position: relative;
-  /* padding: 50px 100px; */
   max-width: 1300px;
   margin: auto;
 }
@@ -297,4 +296,38 @@ section {
 
 #resume {
   padding-bottom: 200px;
+}
+
+h1 {
+  transition: color 2s;
+}
+
+h1.color0 {
+  color: #000;
+}
+
+h1.color1 {
+  color: #583096;
+}
+
+h1.color2 {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+h1.color3 {
+  color: mistyrose;
+}
+
+@media (max-width: 900px) {
+  .page {
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .header a {
+    display: none;
+  }
 }

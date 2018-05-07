@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>John Snyder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -145,5 +146,15 @@
         $('.modal').removeClass('transitioning');
       }, 400)
     })
+
+    var title = $('.header h1');
+    var index = 0;
+    setInterval(function () {
+      index++;
+      if (index === 5) {
+        index = 0;
+      }
+      title.attr('class', 'color' + index);
+    }, 6000)
   </script>
 </html>
