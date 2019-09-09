@@ -123,22 +123,30 @@ input {
 }
 
 .modal-box input:not(:last-child) {
-  font-size: 20px;
-  padding: 3px 0;
-  border-bottom: 1px solid #999;
+  font-size: 16px;
+  padding: 5px;
+  margin-top: 20px;
+  border-bottom: 1px solid #777;
   width: 500px;
 }
 
 .modal-box textarea {
   height: 250px;
   min-height: 250px;
-  font-size: 20px;
+  margin-top: 20px;
   max-height: 250px;
-  width: 100%;
   max-width: 100%;
-  min-width: 100%;
   background: transparent;
   border: none;
+  font-size: 16px;
+  background: #f6f6f6;
+  padding: 5px;
+  margin-bottom: 20px;
+  width: 500px;
+}
+
+.modal-box textarea:focus {
+  outline: none;
 }
 
 #close {
@@ -220,6 +228,7 @@ p {
 .dark-button {
   margin-left: 10px;
   padding: 5px 0px;
+  font-size: 16px;
   color: #333;
   border-bottom: 1px solid #777;
   font-weight: 500;
