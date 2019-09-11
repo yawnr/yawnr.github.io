@@ -83,8 +83,7 @@ input {
 
 .page {
   position: relative;
-  max-width: 1300px;
-  margin: auto;
+  margin: 0 200px;
 }
 
 .modal {
@@ -93,9 +92,10 @@ input {
   left: 0;
   bottom: 0;
   right: 0;
+  justify-content: flex-start;
   flex: 1;
   z-index: 10000;
-  background: rgba(255, 255, 255, 0.97);
+  background: rgba(255, 255, 255, 0.95);
   transition: all 400ms;
 }
 
@@ -109,10 +109,10 @@ input {
 }
 
 .modal-box {
-  max-width: 1300px;
-  width: 100%;
-  margin: auto;
   padding: 0;
+  width: 100%;
+  margin: 0 200px;
+  max-width: 500px;
   flex: 1;
   position: relative;
 }
@@ -127,7 +127,7 @@ input {
   padding: 5px;
   margin-top: 20px;
   border-bottom: 1px solid #777;
-  width: 500px;
+  width: 100%;
 }
 
 .modal-box textarea {
@@ -137,12 +137,11 @@ input {
   max-height: 250px;
   max-width: 100%;
   background: transparent;
-  border: none;
   font-size: 16px;
-  background: #f6f6f6;
+  border: 1px solid #777;
   padding: 5px;
   margin-bottom: 20px;
-  width: 500px;
+  width: 100%;
 }
 
 .modal-box textarea:focus {
@@ -339,9 +338,23 @@ h1 {
 }
 
 
+@media (max-width: 1100px) {
+  .page {
+    margin: 0 120px;
+  }
+
+  .modal-box {
+    margin: 0 120px;
+  }
+}
+
 @media (max-width: 900px) {
   .page {
-    max-width: 90%;
+    margin: 0 30px;
+  }
+
+  .modal-box {
+    margin: 0 30px;
   }
 
   .header > h1 {
